@@ -35,12 +35,6 @@ public class AnimationBlender : MonoBehaviour
     {
         transformsPares = new List<TransformsPare>();
         CollectData(transformsPares, transform, reference, checkBonesNames);
-        Rigidbody[] rigidbodies = GetComponentsInChildren<Rigidbody>();
-        for (var i = 0; i < rigidbodies.Length; i++)
-        {
-            // if (!rigidbodies[i].isKinematic)
-            // rigidbodies[i].gameObject.AddComponent<RigidbodyController>();
-        }
     }
 
     private static void CollectData(List<TransformsPare> pares, Transform physical, Transform animated, bool checkBonesNames)
