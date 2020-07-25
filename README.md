@@ -8,7 +8,6 @@ Unity - 2020.1
 
 * You should create two game objects: one for reference animation (for example using Animator Controller, or script), second for physic (for example with rigidbody)
 * Add script `AnimationBlender` to any root bone you want to animate. `AnimationBlender` will apply animation from reference animation object to this object and all his children.
-* Add script `AnimationBlender` to any root bone you want to animate. `AnimationBlender` will apply animation from reference animation object to this object and all his children.
 * Setup all parameters
   * `Reference` - object for taking animation
   * `Check Bones Names` - Should we fail if bones name are not equal
