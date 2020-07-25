@@ -20,6 +20,7 @@ public class AnimationBlender : MonoBehaviour
 
     [Tooltip("Object for taking animation")]
     [SerializeField] private Transform reference;
+    [SerializeField] private bool checkBonesNames = true;
     [Tooltip("How much animation updates should be applied")]
     [SerializeField, Range(0, 1)] private float animationFactor;
     [Tooltip("How much physic body should try to return to animation angles")]
@@ -33,7 +34,7 @@ public class AnimationBlender : MonoBehaviour
     void Start()
     {
         transformsPares = new List<TransformsPare>();
-        CollectData(transformsPares, transform, reference);
+        CollectData(transformsPares, transform, reference, checkBonesNames);
         Rigidbody[] rigidbodies = GetComponentsInChildren<Rigidbody>();
         for (var i = 0; i < rigidbodies.Length; i++)
         {
@@ -42,18 +43,22 @@ public class AnimationBlender : MonoBehaviour
         }
     }
 
-    private static void CollectData(List<TransformsPare> pares, Transform physical, Transform animated)
+    private static void CollectData(List<TransformsPare> pares, Transform physical, Transform animated, bool checkBonesNames)
     {
         ValidateChildCount(physical, animated);
         for (int i = 0; i < physical.childCount; i++)
         {
             Transform pChild = physical.GetChild(i);
             Transform aChild = animated.GetChild(i);
-            ValidateName(pChild, aChild);
+            if (checkBonesNames)
+            {
+                ValidateName(pChild, aChild);
+            }
+
             pares.Add(new TransformsPare(pChild, aChild));
             if (pChild.childCount > 0)
             {
-                CollectData(pares, pChild, aChild);
+                CollectData(pares, pChild, aChild, checkBonesNames);
             }
         }
     }
