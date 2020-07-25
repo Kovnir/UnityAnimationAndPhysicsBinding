@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//github: https://github.com/Kovnir/UnityAnimationAndPhysicsBinding
 public class AnimationBlender : MonoBehaviour
 {
     private struct TransformsPare
