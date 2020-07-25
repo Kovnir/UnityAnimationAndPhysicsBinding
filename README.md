@@ -1,8 +1,10 @@
 # Description
 
-*UnityAnimationAndPhysicsBinding* - is attempt to make simple tool for blending animations with physic.
+*Unity Animation And Physics Binding* - is attempt to make simple tool for blending animations with physic.
 
 Unity - 2020.1
+
+
 
 ## How to use
 
@@ -14,6 +16,8 @@ Unity - 2020.1
   * `Animation Factor` - How much animation updates should be applied
   * `Resolve Factor` - How much physic body should try to return to animation angles
   * `Ingore` - A list of Transforms to ignore (animation will not be applied)
+
+<img src="Doc/Animation Blender.png" width=400>
 
 ## What sholud be enhanced
 
