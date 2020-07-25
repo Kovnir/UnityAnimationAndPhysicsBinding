@@ -14,7 +14,7 @@ Made with Unity 2020.1
   * `Reference` - object for taking animation
   * `Check Bones Names` - Should we fail if bones name are not equal
   * `Animation Factor` - How much animation updates should be applied
-  * `Resolve Factor` - How much physic body should try to return to animation angles
+  * `Resolve Factor` - How much physic body should try to return to animation angles (bigger values - closer to animation, but bigger jitter with physic)
   * `Ingore` - A list of Transforms to ignore (animation will not be applied)
 
 <img src="Doc/Animation Blender.png" width=400>
