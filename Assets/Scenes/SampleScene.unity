@@ -200,8 +200,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.0766758
-  m_Center: {x: 0, y: 0.0766758, z: 0}
+  m_Radius: 0.12
+  m_Center: {x: 0, y: 0.0766758, z: 0.02}
 --- !u!1 &115210473 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -4964426168678133720, guid: b752af25872084e748721be3da23d27e, type: 3}
@@ -279,7 +279,7 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.07
-  m_Height: 0.51614964
+  m_Height: 0.4
   m_Direction: 1
   m_Center: {x: 0, y: -0.25807482, z: 0}
 --- !u!1001 &339709190
@@ -929,8 +929,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.06
-  m_Height: 0.27841514
+  m_Radius: 0.05
+  m_Height: 0.2
   m_Direction: 0
   m_Center: {x: -0.13920757, y: 0, z: 0}
 --- !u!1 &1156909411 stripped
@@ -1010,7 +1010,7 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.07
-  m_Height: 0.51614964
+  m_Height: 0.4
   m_Direction: 1
   m_Center: {x: 0, y: -0.25807482, z: 0}
 --- !u!1 &1236777529
@@ -1184,8 +1184,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.06
-  m_Height: 0.27841526
+  m_Radius: 0.05
+  m_Height: 0.2
   m_Direction: 0
   m_Center: {x: 0.13920763, y: 0, z: 0}
 --- !u!1 &1625017290 stripped
@@ -1304,7 +1304,7 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.07
-  m_Height: 0.44370472
+  m_Height: 0.3
   m_Direction: 1
   m_Center: {x: 0, y: -0.22185236, z: 0}
 --- !u!1 &1733017747 stripped
@@ -1384,7 +1384,7 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.04
-  m_Height: 0.43836233
+  m_Height: 0.4
   m_Direction: 0
   m_Center: {x: 0.21918117, y: 0, z: 0}
 --- !u!1 &1733576461 stripped
@@ -1486,7 +1486,7 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.04
-  m_Height: 0.4475829
+  m_Height: 0.4
   m_Direction: 0
   m_Center: {x: -0.22379145, y: 0, z: 0}
 --- !u!1 &2090219978 stripped
@@ -1566,6 +1566,6 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.07
-  m_Height: 0.44370538
+  m_Height: 0.3
   m_Direction: 1
   m_Center: {x: 0, y: -0.22185269, z: 0}
