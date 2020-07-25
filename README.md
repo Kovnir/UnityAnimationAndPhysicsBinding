@@ -2,13 +2,15 @@
 
 *Unity Animation And Physics Binding* - is attempt to make simple tool for blending animations with physic. It is not production ready, it is prototyte, that can be used as start of your realisation.
 
-<img src="Doc/legs.gif" width=400>
+<img src="Doc/legs.gif" width=80%>
 
-<img src="Doc/head.gif" width=400>
+<img src="Doc/head.gif" width=80%>
 
-<img src="Doc/punch.gif" width=400>
+<img src="Doc/punch.gif" width=80%>
 
-<img src="Doc/floor.gif" width=400>
+<img src="Doc/floor.gif" width=80%>
+
+<img src="Doc/fall.gif" width=80%>
 
 Made with Unity 2020.1
 
@@ -25,7 +27,8 @@ Made with Unity 2020.1
   * `Resolve Factor` - How much physic body should try to return to animation angles (bigger values - closer to animation, but bigger jitter with physic)
   * `Ingore` - A list of Transforms to ignore (animation will not be applied)
 
-<img src="Doc/Animation Blender.png" width=400>
+<img src="Doc/setup.gif" width=80%>
+<!--<img src="Doc/Animation Blender.png" width=400>-->
 
 ## What sholud be enhanced
 
