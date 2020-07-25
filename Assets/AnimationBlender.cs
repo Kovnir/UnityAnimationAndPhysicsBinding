@@ -34,6 +34,12 @@ public class AnimationBlender : MonoBehaviour
     {
         transformsPares = new List<TransformsPare>();
         CollectData(transformsPares, transform, reference);
+        Rigidbody[] rigidbodies = GetComponentsInChildren<Rigidbody>();
+        for (var i = 0; i < rigidbodies.Length; i++)
+        {
+            // if (!rigidbodies[i].isKinematic)
+            // rigidbodies[i].gameObject.AddComponent<RigidbodyController>();
+        }
     }
 
     private static void CollectData(List<TransformsPare> pares, Transform physical, Transform animated)
@@ -67,16 +73,12 @@ public class AnimationBlender : MonoBehaviour
         }
     }
 
-
-    public void Update()
+    public void ResetAngles()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        for (int index = 0; index < transformsPares.Count; index++)
         {
-            for (int index = 0; index < transformsPares.Count; index++)
-            {
-                var pare = transformsPares[index];
-                pare.Physical.localRotation = pare.Animated.localRotation;
-            }
+            var pare = transformsPares[index];
+            pare.Physical.localRotation = pare.Animated.localRotation;
         }
     }
 
