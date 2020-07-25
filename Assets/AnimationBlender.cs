@@ -21,13 +21,14 @@ public class AnimationBlender : MonoBehaviour
 
     [Tooltip("Object for taking animation")]
     [SerializeField] private Transform reference;
+    [Tooltip("Should we fail if bones name are not equal")]
     [SerializeField] private bool checkBonesNames = true;
     [Tooltip("How much animation updates should be applied")]
     [SerializeField, Range(0, 1)] private float animationFactor;
-    [Tooltip("How much physic body should try to return to animation angles")]
+    [Tooltip("How much physic body should try to return to animation angles (bigger values - closer to animation, but bigger jitter with physic)")]
     [SerializeField, Range(0, 1)] private float resolveFactor;
 
-    [Tooltip("A list of Transforms to ignore")]
+    [Tooltip("A list of Transforms to ignore (animation will not be applied)")]
     [SerializeField] private List<Transform> ignore;
 
     private List<TransformsPare> transformsPares;
