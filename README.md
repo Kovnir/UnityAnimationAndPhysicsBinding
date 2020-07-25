@@ -1,6 +1,6 @@
 # Description
 
-*Unity Animation And Physics Binding* - is attempt to make simple tool for blending animations with physic.
+*Unity Animation And Physics Binding* - is attempt to make simple tool for blending animations with physic. It is not production ready, it is prototyte, that can be used as start of your realisation.
 
 Unity - 2020.1
 
