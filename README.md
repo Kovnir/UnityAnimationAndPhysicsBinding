@@ -10,6 +10,8 @@
 
 <img src="Doc/floor.gif" width=400>
 
+<img src="Doc/fall.gif" width=400>
+
 Made with Unity 2020.1
 
 
@@ -25,7 +27,8 @@ Made with Unity 2020.1
   * `Resolve Factor` - How much physic body should try to return to animation angles (bigger values - closer to animation, but bigger jitter with physic)
   * `Ingore` - A list of Transforms to ignore (animation will not be applied)
 
-<img src="Doc/Animation Blender.png" width=400>
+<img src="Doc/setup.gif" width=400>
+<!--<img src="Doc/Animation Blender.png" width=400>-->
 
 ## What sholud be enhanced
 
