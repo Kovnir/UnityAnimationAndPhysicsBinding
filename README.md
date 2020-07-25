@@ -9,3 +9,4 @@ Unity - 2020.1
 * To make character stay in the place you need to ignore one bone, for example, hip and make its rigidboby Kinematic. It will allow the animation
 * Joints should be set up depends on your animation. Movement of your animations will be not so intensive if it is not allowed by joints
 * Physic will affect the doll, even if you will set all parameters to the maximum. So you will never have animations that look 100% as original
+* Algorithm depends on bones' game objects transforms order and hierarchy. It will not work if it is not equals
